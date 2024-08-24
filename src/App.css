@@ -1,0 +1,53 @@
+.app {
+  display: flex;
+  height: 100vh; /* Optional: Makes the container take the full height of the viewport */
+}
+
+
+.left, .right {
+  flex: 1;
+  padding: 20px;
+}
+
+.left {
+  flex: 0 0 30%; /* Set width to 35% */
+  padding: 20px;
+  background-color: #bb5cf0; /* Customize as needed */
+}
+
+.left-image {
+  width: 100%; /* Adjust as needed */
+  height: auto; /* Maintain aspect ratio */
+  max-width: 500px; /* Optional: Limit maximum width */
+}
+
+.left input {
+  margin-top: 100px; /* Space between the image and the input */
+  padding: 10px 10px; /* Padding inside the input */
+  border: 1px solid #ccc; /* Border color */
+  border-radius: 6px; /* Rounded corners */
+  outline: none;
+  width: 200px;
+}
+
+.left button {
+  margin-top: 20px; /* Space between the input and the button */
+  padding: 10px 20px; /* Padding inside the button */
+  border: none; /* Remove default border */
+  border-radius: 6px; /* Rounded corners */
+  background-color: #4caf50; /* Background color */
+  color: white; /* Text color */
+  font-size: 16px; /* Font size */
+  cursor: pointer; /* Pointer cursor on hover */
+  transition: background-color 0.3s; /* Smooth transition for background color */
+}
+
+.left button:hover {
+  background-color: #45a049; /* Darker background color on hover */
+}
+
+.right {
+  flex: 1; /* Take the remaining space */
+  padding: 20px;
+  background-color: #e854b8; /* Customize as needed */
+}
